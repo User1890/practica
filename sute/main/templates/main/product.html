@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    ClotheShop
+{% endblock %}
+{% block main %}
+    <div class="main-p">
+        {% for el in prod %}
+            <div class="wrapper">
+                <div class="product">
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="row" style="border: 2px outset #b8b8b8; border-radius: 10px; padding: 20px; background-color: white">
+                                <a style="position: absolute; width: 2vw; text-shadow: none; font-size: 30px" onclick="javascript:history.back(-1); return false;">&#8592;</a>
+                                <img src="{{'../static/main/image/pass.jpg'}}">
+                            </div>
+                        </div>
+
+                        <div class="col" >
+                            <div class="row">
+                                <div class="product-head">
+                                    {{ el.name }}
+                                </div>
+                                <div class="product-cost">
+                                    {{ el.cost }}₽
+                                </div>
+                            </div>
+                            <button class ="prod-but">*buy*</button>
+                            <hr>
+                            <div class="row">
+                                <div class="product-description">
+                                    {{ el.descriptions }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

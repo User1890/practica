@@ -1,0 +1,37 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    ClotheShop
+{% endblock %}
+{% block main %}
+    <div class="main-pr">
+    <div class="form-p">
+        <div class="col">
+            <div class="row"><div class="chapter-name">Autorisation</div></div>
+            <div class="row">
+                <form action="../" method="get" class="f">
+                    <div class="col">
+                        <div class="row">
+                            <input type="text" name="email" id="email" class="inp-email" required placeholder="*your email*">
+                        </div>
+                        <div class="row">
+                            <input type="text" name="password" id="password" class="inp-pass" required placeholder="*your password*">
+                        </div>
+                        <div class="row"style=" margin: auto;">
+                            <button id="au-but">
+                                *send*
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
+<script>
+    document.getElementById("au-but").onclick = function(e) {
+    document.getElementById("email").value = "";
+    document.getElementById("password").value = "";
+}
+</script>

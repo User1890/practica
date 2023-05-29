@@ -1,0 +1,87 @@
+.main-pr{
+    min-height: 78.3vh;
+    background-image: url("../image/bg2.svg");
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+}
+.form-p{
+    width: 30vw;
+    margin: auto;
+    background-color: #F0E2E2;
+    border: 2px outset #b8b8b8;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+#email{
+    width: 50%;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+#password{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+#au-but {
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    padding: 3px 5px 3px 5px;
+    border-radius: 10px;
+    background-color: #9485AA;
+    color: white;
+    transition: 0.2s;
+}
+#au-but:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+@media(max-width: 550px) {
+    .main-pr{
+         min-height: 84.5vh;
+    }
+    .form-p{
+        width: 70vw;
+    }
+    #email{
+        font-size: 12px;
+        text-align: center;
+    }
+    #password{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media (min-width: 550px) and (max-width: 990px){
+    .main-pr{
+        min-height: 85.5vh;
+        padding-top: 200px;
+    }
+    .form-p{
+        width: 50vw;
+    }
+    #email{
+        text-align: center;
+    }
+    #password{
+        text-align: center;
+    }
+}
+@media(min-width: 1400px){
+    .main-pr{
+        min-height: 83vh;
+        padding-top: 200px;
+    }
+    #email{
+        text-align: center;
+    }
+    #password{
+        text-align: center;
+    }
+}

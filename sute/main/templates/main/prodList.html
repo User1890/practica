@@ -1,0 +1,48 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    ClotheShop
+{% endblock %}
+{% block main %}
+    <div class="main">
+    <div class="row">
+        <div class="col">
+            <div class="dropdown">
+                <button id="d-but" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #9485AA;">
+                    Категории
+                </button>
+                <ul id="d-menu" class="dropdown-menu">
+                    <li><a class="dropdown-item" href="?type=1">Футболки</a></li>
+                    <li><a class="dropdown-item" href="?type=2">Свитеры</a></li>
+                    <li><a class="dropdown-item" href="?type=3">Куртки</a></li>
+                    <li><a class="dropdown-item" href="?type=4">Штаны</a></li>
+                    <li><a class="dropdown-item" href="?type=5">Ботинки</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="list">
+                <div class="row">
+                    {% for el in prod %}
+                        <div class="col" >
+                            <div class="prod">
+                                <div class="row">
+                                    <img src="{{'../static/main/image/pass.jpg'}}">
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <a href="http://127.0.0.1:8000/product/?type={{ type }}&id={{ el.id }}" class="name">{{ el.name }}</a>
+                                </div>
+                                <div class="row">
+                                    <div class="cost">{{ el.cost }}₽</div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="col" id="col"></div>
+    </div>
+</div>
+{% endblock %}

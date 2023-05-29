@@ -1,0 +1,292 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    ClotheShop
+{% endblock %}
+{% block main %}
+<div class="main">
+
+    <div class="header-content">
+        <div class="row">
+            <div class="col-8">
+                <div class="header-content-text">
+                    First in Russia!
+                    <p>Exclusive clothing store</p>
+                    straight from Asia.
+                </div>
+            </div>
+            <div class="col">
+                <div class="header-content-des">
+                    It's time to start!
+                    <a href="#content" style="text-decoration: none; "><p>*click*</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <a name="content"></a>
+    <div class="wrapper">
+        <div class="partition">
+            <div class="row">
+                <div class="chapter-name">
+                    Section
+                </div>
+                <div class="row">
+                    <div class="chapter-description">
+                        Choose the category you are interested in
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="partition-slides">
+                                <div class="row">
+                                    <div class="col" style="background-color: white;border: 2px outset #b8b8b8; border-radius: 10px; margin: 3px">
+                                        <div class="row">
+                                            <img src="{{'../static/main/image/shirts.jpg'}}" alt="" class="partition-img">
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <a href="prodList/?type=1" class="partition-text">T-Shirts</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col" style="background-color: white;border: 2px outset #b8b8b8; border-radius: 10px; margin: 3px">
+                                        <div class="row">
+                                            <img src="{{'../static/main/image/sweet.jpg'}}" alt="" class="partition-img">
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <a href="prodList/?type=2" class="partition-text">Sweaters</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col" style="background-color: white;border: 2px outset #b8b8b8; border-radius: 10px; margin: 3px">
+                                        <div class="row">
+                                            <img src="{{'../static/main/image/djemp.jpg'}}" alt="" class="partition-img">
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <a href="prodList/?type=3" class="partition-text">Jackets</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="partition-slides">
+                                <div class="row">
+                                    <div class="col"></div>
+                                    <div class="col-4" style="background-color: white;border: 2px outset #b8b8b8; border-radius: 10px; margin: 3px; border: 2px outset #b8b8b8">
+                                        <div class="row" >
+                                            <img src="{{'../static/main/image/pants.jpg'}}" alt="" class="partition-img">
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <a href="prodList/?type=4" class="partition-text">Pants</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-4" style="background-color: white;border: 2px outset #b8b8b8; border-radius: 10px; margin: 3px">
+                                        <div class="row" >
+                                            <img src="{{'../static/main/image/boots.jpg'}}" alt="" class="partition-img">
+                                        </div>
+                                        <hr>
+                                        <div class="row">
+                                            <a  href="prodList/?type=5" class="partition-text">Boots</a>
+                                        </div>
+
+                                    </div>
+                                    <div class="col"></div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" style="background-color: black; height: 6vh; width: 4vw; margin: auto;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" style="background-color: black; height: 6vh; width: 4vw; margin: auto;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="wrapper">
+        <div class="news">
+            <div class="row">
+                <div class="chapter-name">
+                    Novelties
+                </div>
+            </div>
+            <div class="news-slides">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <img class ="news-img" src="{{'../static/main/image/new-sweet1.jpg'}}" alt="">
+                    </div>
+                    <hr style="width: 90%; margin: auto; padding: 10px">
+                    <div class="row">
+                        <div class="news-text">
+                            "Goose"
+                        </div>
+                        <div class="news-cost">
+                            2300₽
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <img class ="news-img" src="{{'../static/main/image/new-sweet2.jpg'}}" alt="">
+                    </div>
+                    <hr style="width: 90%; margin: auto; padding: 10px">
+                    <div class="row" >
+                        <div class="news-text">
+                            "Bones"
+                        </div>
+                        <div class="news-cost">
+                            2100₽
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="special">
+        <div class="col">
+        <div class="row">
+            <hr style="background: #999999;width: 60%; margin: 10vh 20% 0 20%;">
+            <div class="chapter-name">Perhaps you will be interested</div>
+            <hr style="background: #999999;width: 60%; margin: 0 20% 10vh 20%;">
+        </div>
+        <div class="row"  id="s-row">
+            <div class="col"></div>
+            <div class="col-6" style="display: block;margin: 0 auto; ">
+                <img class="special-img" src="{{'../static/main/image/jack1.jpg'}}">
+            </div>
+            <div class="col"></div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="special-text">
+                        "Town"
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="special-cost">
+                        4700₽
+                    </div>
+                </div>
+                <div class="row">
+                        <button style="width: 50%;" class ="special-but">*buy*</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="row" style="height: 10px;"></div>
+         <div class="row">
+            <div class="col"></div>
+            <div class="col-6" style="display: block;margin: 0 auto; ">
+                <img class="special-img" src="{{'../static/main/image/jack2.jpg'}}">
+            </div>
+            <div class="col"></div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="special-text">
+                        "Night"
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="special-cost">
+                        4500₽
+                    </div>
+                </div>
+                <div class="row">
+                        <button style="width: 50%"; class ="special-but">*buy*</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+        <div class="row" style="height: 10px;"></div>
+    </div>
+        </div>
+
+    <hr>
+
+    <a name="contact"></a>
+    <div class="contact"style="background-color: #FFF7B0">
+        <div class="row">
+            <div class="col-5" style="background-color: #BEA4E4">
+                <img class="contact-img" src="{{'static/main/image/mail.jpg'}}">
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="chapter-name">
+                        Connect with us
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="chapter-description">
+                        Are there any questions left?
+                    </div>
+                </div>
+                <div class="row">
+                    <form action="" method="get" class="form-example">
+                        <input type="text" name="name" id="name" class="contact-input" required placeholder="*your email*">
+                        <p></p>
+                        <button class="contact-but">
+                            *send*
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="wrapper">
+    <div class="follow">
+        <div class="col">
+        <div class="row">
+            <div class="chapter-name">
+                Follow
+            </div>
+        </div>
+        <div class="row" style="margin-top: 20px">
+            <div class="col"></div>
+            <div class="col">
+                <a href="https://www.instagram.com/"><img class="follow-icon" src="{{'static/main/icons/instagram.png'}}" alt=""></a>
+            </div>
+            <div class="col">
+                <a href="https://web.telegram.org/"><img class="follow-icon" src="{{'static/main/icons/telegram.png'}}" alt=""></a>
+            </div>
+            <div class="col">
+                <a href="https://twitter.com/?lang=ru"><img class="follow-icon" src="{{'static/main/icons/twitter.png'}}" alt=""></a>
+            </div>
+            <div class="col"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
